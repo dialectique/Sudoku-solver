@@ -1,4 +1,6 @@
-
+"""
+Usefull classes for the deep-first search
+"""
 
 class Node():
     def __init__(self, state, parent):
@@ -25,15 +27,4 @@ class StackFrontier():
         else:
             node = self.frontier[-1]
             self.frontier = self.frontier[:-1]
-            return node
-
-
-class QueueFrontier(StackFrontier):
-
-    def remove(self):
-        if self.empty():
-            raise Exception("empty frontier")
-        else:
-            node = self.frontier[0]
-            self.frontier = self.frontier[1:]
             return node

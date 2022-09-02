@@ -138,7 +138,7 @@ class Sudoku():
     def solve(self):
         """
         finds a solution to the sudoku grid, if one exists,
-        using breadth-first search
+        using deep-first search
         If several solutions exist, return the first finded
         :return: nested list of integers, size 9*9,
         1 <= integer <= 9, no 0 beacause no empty cell
