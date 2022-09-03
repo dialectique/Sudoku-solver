@@ -1,7 +1,4 @@
-import csv
-import sys
-
-from sudokupackage.util import Node, StackFrontier, QueueFrontier
+from sudokupackage.util import Node, StackFrontier
 
 
 class Sudoku():
