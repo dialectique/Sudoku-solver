@@ -25,4 +25,4 @@ count_lines:
 	@echo ''
 
 run_api:
-	uvicorn api.fast:app --reload # load the web server with code autoreload
+	uvicorn api.sudoku_api:app --reload # load the web server with code autoreload
