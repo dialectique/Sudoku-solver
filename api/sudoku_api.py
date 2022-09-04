@@ -1,5 +1,5 @@
 """
-sudoku solver api with fastAPI and Uvicorn
+sudoku solver api with fastAPI
 """
 import json
 import ast
