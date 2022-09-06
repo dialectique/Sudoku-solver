@@ -1,5 +1,5 @@
 """
-test project-sudoku api
+test project-sudoku api on localhost
 """
 import json
 import requests
@@ -37,9 +37,9 @@ solved_grid = [
 def test_get_on_localhost():
     url = "http://localhost:8000/"
     response = requests.get(url)
-    assert response.json() == {"ok": True}
+    assert response.status_code == 200
 
-def test_solve_on_localhost():
+def test_solve_sudoku_on_localhost():
     params = {"sudoku_grid": json.dumps(sudoku_grid)}
     url = "http://localhost:8000/solve_sudoku"
     response = requests.get(url, params=params)

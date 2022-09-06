@@ -6,8 +6,8 @@ with open('requirements.txt') as f:
     content = f.readlines()
 requirements = [x.strip() for x in content if 'git+' not in x]
 
-setup(name='sudokupackage',
+setup(name='sudokuapp',
       version="1.0",
-      description="package for sudoku solving",
+      description="package for sudoku app solving",
       packages=find_packages(),
       install_requires=requirements)

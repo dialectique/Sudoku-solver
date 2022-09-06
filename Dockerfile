@@ -1,8 +1,11 @@
-FROM tiangolo/uvicorn-gunicorn-fastapi:python3.7
+FROM python:3.7-alpine
 
-COPY .api /api
-COPY .sudokupackage /sudokupackage
-COPY requirements.txt /requirements.txt
+RUN pip install fastapi uvicorn
 
-RUN pip install --upgrade pip
-RUN pip install -r requirements.txt
+COPY ./start.sh /start.sh
+
+RUN chmod +x /start.sh
+
+COPY ./sudokuapp /sudokuapp
+
+CMD ["./start.sh"]

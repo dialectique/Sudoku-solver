@@ -1,4 +1,4 @@
-from sudokupackage.util import Node, StackFrontier
+from sudokuapp.util import Node, StackFrontier
 
 
 class Sudoku():
@@ -193,7 +193,7 @@ class Sudoku():
 
 
 def main():
-    print("The library essai.py has been ran directly.")
+    print("The library sodoku.py has been ran directly.")
 
 
 if __name__ == "__main__":

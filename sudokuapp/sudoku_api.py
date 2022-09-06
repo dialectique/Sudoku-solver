@@ -1,19 +1,20 @@
 """
 sudoku solver api with fastAPI
 """
-import json
+
 import ast
+
 from fastapi import FastAPI
 
-from sudokupackage.sudoku import Sudoku
-
+from sudokuapp.sudoku import Sudoku
 
 app = FastAPI()
 
+
 #define a root `/` endpoint
 @app.get("/")
-def index():
-    return {"ok": True}
+def read_root():
+    return {"Hello": "hello from main"}
 
 
 # define a "/solve" endpoint

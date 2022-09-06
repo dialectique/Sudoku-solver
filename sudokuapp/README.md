@@ -5,3 +5,6 @@
 
 ## sudoku.py
 - contains all the logic to solve sudoku grids, using deep-first search
+
+## sudoku_api.py
+- sudoku solver api with fastAPI

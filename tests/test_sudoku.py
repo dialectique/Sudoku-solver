@@ -4,8 +4,7 @@ test sudokui.py from sudokupackage with pytest
 
 import pytest
 
-# from sudokupackage.sudoku import Sudoku, main
-from sudokupackage.sudoku import Sudoku, main
+from sudokuapp.sudoku import Sudoku, main
 
 
 # list of invalid sudoku grids
