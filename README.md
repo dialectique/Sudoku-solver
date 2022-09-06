@@ -1,8 +1,10 @@
 # sudoku solver app
 
 - Solve sudoku puzzles, using deep first search algorithm.
-https://en.wikipedia.org/wiki/Sudoku
-https://en.wikipedia.org/wiki/Depth-first_search
+
+- https://en.wikipedia.org/wiki/Sudoku
+
+- https://en.wikipedia.org/wiki/Depth-first_search
 
 - This app is an API built with fastAPI
 
@@ -10,14 +12,16 @@ https://en.wikipedia.org/wiki/Depth-first_search
 
 - API URL : https://sudokuapi9999.herokuapp.com/
 
-## usage :
+## Usage :
 - sudoku_grid must be a nested list (9 * 9)
 - the api returns the solved grid as nested list (9 * 9)
 - see example below
 ```
 import json
 import requests
+
 url = "https://sudokuapi9999.herokuapp.com/solve_sudoku"
+
 sudoku_grid = [
     [0,0,3,  0,8,4,  0,0,0],
     [0,5,0,  2,0,0,  0,0,9],
@@ -31,6 +35,7 @@ sudoku_grid = [
     [2,0,0,  0,0,9,  0,3,0],
     [0,0,0,  1,3,0,  6,0,0]
 ]
+
 params = {"sudoku_grid": json.dumps(sudoku_grid)}
 response = requests.get(url, params=params)
 solved_grid = response.json().get('solution')
@@ -57,7 +62,7 @@ solved_grid = response.json().get('solution')
 pip install -e sudokuapp
 ```
 
-## tests
+## Tests
 - tests are done on localhost and on the Heroku deployed app
 
 - first, run the server on localhost:
