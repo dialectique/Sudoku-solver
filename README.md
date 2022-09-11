@@ -57,10 +57,13 @@ solved_grid = response.json().get('solution')
 ]
 ```
 
-## Install package
-```
-pip install -e sudokuapp
-```
+## Package installation
+
+- It is recommended to use a virtual environment to install this project
+- If setuptools is already installed, execute the following command line: ```make install```
+- If setuptools is not installed, execute the followin command line: ```pip install setuptools``` then ```make install```
+- Check out Makefile for more usefull command lines
+
 
 ## Tests
 - tests are done on localhost and on the Heroku deployed app
@@ -73,6 +76,4 @@ make run_api
 - then run the tests with:
 ```
 make tests
-```
 
-## Check out Makefile for other usefull command lines
