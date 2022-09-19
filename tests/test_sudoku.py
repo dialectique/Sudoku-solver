@@ -1,5 +1,5 @@
 """
-test sudokui.py from sudokuapp package with pytest
+test sudoku.py from sudokuapp package with pytest
 """
 
 import pytest
